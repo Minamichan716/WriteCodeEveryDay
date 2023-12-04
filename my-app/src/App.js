@@ -14,8 +14,6 @@ const resetAge = () => {
 }
 const calcAge = () => {
   setAge((age) => 88 - age )
-  
-
 }
 
 
@@ -27,10 +25,12 @@ const calcAge = () => {
         <p>あなたの年齢を入力してください</p>
 
     <input value={age}
-        onChange={(event) => setAge(event.target.value)} />&nbsp;歳<br></br>
+        onChange={(event) => (setAge(event.target.value)*3)} />&nbsp;歳<br></br>
 
 
-      <h2>寿命は残り{age}年です</h2>
+      <h2>{age}歳の残りの寿命は...?</h2>
+      <h3>寿命は残り{age}日です</h3>
+      <h3 >寿命は残り{ReaminAge}日です</h3>
       <button onClick={resetAge}>リセット</button>
       <button onClick={calcAge}>計算する</button>
     </div>
