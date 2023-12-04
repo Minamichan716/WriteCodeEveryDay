@@ -8,12 +8,14 @@ const title = '寿命カウンター'
 function App() {
 // 処理の内容を書く
 // const [count,setCount] = useState(0)
-const [age, setAge] = useState(0);
+const [age, setAge] = useState('');
 const resetAge = () => {
   setAge('')
 }
 const calcAge = () => {
   setAge((age) => 88 - age )
+  
+
 }
 
 
